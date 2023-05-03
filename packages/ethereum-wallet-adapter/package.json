@@ -1,6 +1,6 @@
 {
   "name": "ethereum-wallet-adapter",
-  "version": "0.0.1-test7",
+  "version": "0.0.1-test8",
   "description": "",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
