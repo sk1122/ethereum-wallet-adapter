@@ -541,10 +541,10 @@ escalade@^3.1.1:
   resolved "https://registry.yarnpkg.com/escalade/-/escalade-3.1.1.tgz#d8cfdc7000965c5a0174b4a82eaa5c0552742e40"
   integrity sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==
 
-ethereum-wallet-adapter@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/ethereum-wallet-adapter/-/ethereum-wallet-adapter-0.0.1.tgz#248a9a3dc3989adc7bb223608c5782724a892943"
-  integrity sha512-4ERtqR/VD2JB3kAr2iX7gblpfRthUQKrzHKa6xxrzymhtTQVFL3D2jVlzHQeTnGHMBy4PH8XuV7KkQDA8UEvhg==
+ethereum-wallet-adapter@^0.0.1-test4:
+  version "0.0.1-test4"
+  resolved "https://registry.yarnpkg.com/ethereum-wallet-adapter/-/ethereum-wallet-adapter-0.0.1-test4.tgz#6c84efcb471f625c3ea6f771c5ad4c600f7c1c25"
+  integrity sha512-Xk+L56AZTmrvMJoNWUKuvUlLM+3GRLDNByiD9ANvywZ3pBFTlQdzcGKeHGP2fNEoeFfpDtFqnDndW17KvaUUnw==
   dependencies:
     "@ethersproject/providers" "^5.7.2"
     "@ethersproject/transactions" "^5.7.0"

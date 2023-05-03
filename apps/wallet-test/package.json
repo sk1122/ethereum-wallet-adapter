@@ -13,7 +13,7 @@
     "@types/react": "18.2.0",
     "@types/react-dom": "18.2.1",
     "autoprefixer": "10.4.14",
-    "ethereum-wallet-adapter": "^0.0.1",
+    "ethereum-wallet-adapter": "^0.0.1-test4",
     "next": "13.3.4",
     "postcss": "8.4.23",
     "react": "18.2.0",

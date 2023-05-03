@@ -75,7 +75,7 @@ export interface WalletAdapterProps<Name extends string = string> {
   onNetworkChange(): Promise<void>;
   connect(): Promise<void>;
   disconnect(): Promise<void>;
-  sendTransaction(transaction: UnsignedTransaction, options?: any): Promise<Transaction>;
+  sendTransaction(transaction: UnsignedTransaction & { from: Address }): Promise<Transaction>;
   signMessage(
     message: string | Uint8Array
   ): Promise<string>;
@@ -108,7 +108,7 @@ export abstract class BaseWalletAdapter
 
   abstract connect(): Promise<void>;
   abstract disconnect(): Promise<void>;
-  abstract sendTransaction(transaction: UnsignedTransaction): Promise<Transaction>;
+  abstract sendTransaction(transaction: UnsignedTransaction & { from: Address }): Promise<Transaction>;
 
   abstract signMessage(
     message: string | Uint8Array

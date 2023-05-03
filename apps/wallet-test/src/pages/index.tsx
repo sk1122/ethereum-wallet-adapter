@@ -9,7 +9,9 @@ export default function Home() {
   useEffect(() => {
     const classx = new MetamaskWalletAdapter()
     console.log(classx, "!23")
-    classx.connect().then(x => console.log(x)).catch(e => console.error(e))
+    classx.connect().then(async x => {
+      console.log(x, "123")
+    }).catch(e => console.error(e))
   }, [])
   
   return (

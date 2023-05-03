@@ -69,17 +69,20 @@ export class MetamaskWalletAdapter extends BaseWalletAdapter {
 
     async connect(): Promise<void> {
         try {
-            if(!this.connected || !this.connecting) return
+            console.log(this.connected, this.connecting, "!23555")
+            if(this.connected || this.connecting) return
             if(
                 !(
                     this._readyState === WalletReadyState.Loadable ||
                     this._readyState === WalletReadyState.Installed
+                    
                 )
             ) throw new WalletNotReadyError()
 
             this._connecting = true
 
             const provider = this._provider || (window as any).ethereum
+            console.log(provider, "provider")
             const response = await provider?.request({ method: "eth_requestAccounts" })
             this._wallet = {
                 address: response[0],
@@ -186,7 +189,7 @@ export class MetamaskWalletAdapter extends BaseWalletAdapter {
         }
     }
 
-    async sendTransaction(transaction: UnsignedTransaction): Promise<Transaction> {
+    async sendTransaction(transaction: UnsignedTransaction & { from: Address }): Promise<Transaction> {
         try {
             const wallet = this._wallet
             const provider = this._provider || (window as any).ethereum
