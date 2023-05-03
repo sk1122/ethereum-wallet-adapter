@@ -541,14 +541,15 @@ escalade@^3.1.1:
   resolved "https://registry.yarnpkg.com/escalade/-/escalade-3.1.1.tgz#d8cfdc7000965c5a0174b4a82eaa5c0552742e40"
   integrity sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==
 
-ethereum-wallet-adapter@^0.0.1-test4:
-  version "0.0.1-test4"
-  resolved "https://registry.yarnpkg.com/ethereum-wallet-adapter/-/ethereum-wallet-adapter-0.0.1-test4.tgz#6c84efcb471f625c3ea6f771c5ad4c600f7c1c25"
-  integrity sha512-Xk+L56AZTmrvMJoNWUKuvUlLM+3GRLDNByiD9ANvywZ3pBFTlQdzcGKeHGP2fNEoeFfpDtFqnDndW17KvaUUnw==
+ethereum-wallet-adapter@^0.0.1-test10:
+  version "0.0.1-test10"
+  resolved "https://registry.yarnpkg.com/ethereum-wallet-adapter/-/ethereum-wallet-adapter-0.0.1-test10.tgz#c1d2e701a4bd23ce06c4b131bc563ae4a5c585c7"
+  integrity sha512-Lj93pTrUchb9QPhWmG3mVDo/DegCEiHWFyWvB+wqNZd17CJZcBJG3kDy8rHo25pkL0/N+uom6O0PF/c1WlevSw==
   dependencies:
     "@ethersproject/providers" "^5.7.2"
     "@ethersproject/transactions" "^5.7.0"
     eventemitter3 "^5.0.1"
+    react "^18.2.0"
 
 eventemitter3@^5.0.1:
   version "5.0.1"
@@ -929,7 +930,7 @@ react-dom@18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
-react@18.2.0:
+react@18.2.0, react@^18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==

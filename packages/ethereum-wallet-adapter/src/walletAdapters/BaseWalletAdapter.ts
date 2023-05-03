@@ -14,7 +14,7 @@ export type Address = string;
 export type AuthKey = string;
 
 export interface AccountKeys {
-  publicKey: PublicKey | null;
+  publicKey: PublicKey | null | undefined;
   address: Address | null;
 }
 

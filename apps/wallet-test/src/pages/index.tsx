@@ -1,18 +1,24 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import { MetamaskWalletAdapter } from "ethereum-wallet-adapter"
+import { useWallet, WalletName } from "ethereum-wallet-adapter"
 import { useEffect } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const {
+    account,
+    connect,
+    disconnect
+  } = useWallet()
+
   useEffect(() => {
-    const classx = new MetamaskWalletAdapter()
-    console.log(classx, "!23")
-    classx.connect().then(async x => {
-      console.log(x, "123")
-    }).catch(e => console.error(e))
-  }, [])
+    connect("Metamask" as WalletName<"Metamask">).then(x => {
+      console.log(x, account)
+      disconnect()
+    })
+    // console.log(account)
+  }, [account])
   
   return (
     <main

@@ -42,8 +42,8 @@ export class MetamaskWalletAdapter extends BaseWalletAdapter {
 
     get publicAccount(): AccountKeys {
         return {
-            publicKey: this._wallet.publicKey || null,
-            address: this._wallet.address || null
+            publicKey: this._wallet?.publicKey ?? null,
+            address: this._wallet?.address ?? null
         }
     }
 
